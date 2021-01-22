@@ -1,0 +1,143 @@
+body{
+	background:url(img/squared.jpg) top left / 500px fixed; /*!!!*/
+	margin:0px;
+	padding:0px
+}
+
+/*nav*/
+
+.container {
+	margin: 0 auto;
+}
+
+@media(min-width: 1095px){
+	img.top{
+		width:1093px;
+		margin-top:-5px;
+	}
+	article{
+		max-width:1094px;
+		margin:0 auto;
+	}
+	ul.nav li{
+		display:inline;
+		float:left;
+		font-family: 'Raleway', sans-serif;
+	}
+	ul.nav a{
+		display:inline-block;
+		/*border:1px solid #000;*/
+		padding:40.5px 40px;
+		background: rgb(253,255,255);
+		color: #000;
+		border-radius:0px;
+		text-decoration:none;
+	}
+	ul.nav li.block{
+		display:inline-block;
+		/*border:1px solid #000;*/
+		padding:50px 131px;
+		background: rgb(253,255,255);
+		color: #000;
+		border-radius:0px;
+		text-decoration:none;
+		/*	position:fixed;*/
+	}
+}
+
+ul.nav a:hover{
+	transition-property:all;
+	transition-duration:400ms;	
+	background: rgb(240 240 240);
+}
+ul.nav{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	list-style:none
+}
+
+/*litle nav*/
+@media(max-width: 1094px){
+	img#tut{
+		margin-bottom:-5px;
+	}
+	img.top{
+		height:275px;
+		width:450px;
+		margin-top:0px;
+	}
+	div.nav{
+		float:left;
+	}
+	ul.nav a{
+		display:block;
+		/*border:1px solid #000;*/
+		padding:8px;
+		background: rgb(253,255,255);
+		color: #000;
+		border-radius:0px;
+		text-decoration:none;
+	}
+	ul.nav li{
+		font-family: 'Raleway', sans-serif;
+	}
+}
+
+
+/*text and img*/
+img#tut{
+	width:100px;
+}
+div.text{
+	padding: 50px 0px 100px 0px;
+	text-align:center;
+}
+h1.contacts{
+	font-family: 'Nunito', sans-serif;
+	margin-top:20px;
+	font-size:4em;
+	margin-bottom: 30px;
+}
+@media(max-width: 1094px){
+	h1{
+		text-align:center;
+	}
+}
+div.text h2{
+	text-align:center;
+	margin:20px;
+	font-size:2.2em;
+	font-family: 'Nunito', sans-serif;
+}
+div.text p{
+	margin-bottom: 20px;
+	font-size: 1.4em;
+	font-family: 'Raleway', sans-serif;
+}
+iframe{
+	order:2;
+}
+ul.contacts{
+	font-size: 1.4em;
+	font-family: 'Raleway', sans-serif;
+	order:1;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	margin-top:200px;
+}
+div.contacts{
+	display: flex;
+	justify-content:space-between;
+}
+
+footer{
+	background:#000;
+}
+footer p{
+	font-family: 'Raleway', sans-serif;
+	padding:50px 0px 30px 50px;
+	color:#555;
+	margin-top:100px;
+}

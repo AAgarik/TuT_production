@@ -1,0 +1,196 @@
+body{
+	background:url(img/squared.jpg) top left / 500px fixed; /*!!!*/
+	margin:0px;
+	padding:0px
+}
+
+/*nav*/
+
+.container {
+	margin: 0 auto;
+}
+
+@media(min-width: 1095px){
+	img.top{
+		width:1093px;
+		margin-top:-5px;
+	}
+	article{
+		max-width:1094px;
+		margin:0 auto;
+	}
+	ul.nav li{
+		display:inline;
+		float:left;
+		font-family: 'Raleway', sans-serif;
+	}
+	ul.nav a{
+		display:inline-block;
+		/*border:1px solid #000;*/
+		padding:40.5px 40px;
+		background: rgb(253,255,255);
+		color: #000;
+		border-radius:0px;
+		text-decoration:none;
+	}
+	ul.nav li.block{
+		display:inline-block;
+		/*border:1px solid #000;*/
+		padding:50px 131px;
+		background: rgb(253,255,255);
+		color: #000;
+		border-radius:0px;
+		text-decoration:none;
+		/*	position:fixed;*/
+	}
+}
+
+ul.nav a:hover{
+	transition-property:all;
+	transition-duration:400ms;	
+	background: rgb(240 240 240);
+}
+ul.nav{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	list-style:none
+}
+
+/*litle nav*/
+@media(max-width: 1094px){
+	img#tut{
+		margin-bottom:-5px;
+	}
+	img.top{
+		height:275px;
+		width:450px;
+		margin-top:0px;
+	}
+	div.nav{
+		float:left;
+	}
+	ul.nav a{
+		display:block;
+		/*border:1px solid #000;*/
+		padding:8px;
+		background: rgb(253,255,255);
+		color: #000;
+		border-radius:0px;
+		text-decoration:none;
+	}
+	ul.nav li{
+		font-family: 'Raleway', sans-serif;
+	}
+}
+
+
+/*text and img*/
+img#tut{
+	width:100px;
+}
+h1.reg{
+	font-family: 'Nunito', sans-serif;
+	margin-top:20px;
+	font-size:4em;
+	margin-bottom: 30px;
+}
+div.text{
+	padding: 50px 0px 100px 0px;
+	text-align:center;
+}
+div.text h2{
+	text-align:center;
+	margin:20px;
+	font-size:2.2em;
+	font-family: 'Nunito', sans-serif;
+}
+div.text p{
+	margin-bottom: 20px;
+	font-size: 1.4em;
+	font-family: 'Raleway', sans-serif;
+}
+@media(max-width: 1094px){
+	h1.reg{
+		text-align:center;
+		margin-bottom: 90px;
+	}
+	div.form{
+		margin-left: 50px;
+	}
+}
+
+
+/*reg*/
+.subform{
+	font-size: 1.4em;
+	color:#333;
+	font-family: 'Raleway', sans-serif;
+}
+.subform label{
+	display:inline-block;
+	width:220px;
+	vertical-align:top;
+	margin-right: 10px;
+	margin-bottom:12px;
+}
+.subform input[type="submit"]{
+	border:solid 1px #999;
+	border-radius: 1px;
+	margin-left: 235px;
+	padding:5px 10px;
+	font-size: 1em;
+	background: rgb(255,255,255);
+	cursor:pointer;
+	color:#333;
+	font-family: 'Raleway', sans-serif;
+
+}
+.subform input[type="submit"]:hover{
+	transition-property:all;
+	transition-duration:400ms;	
+	background: rgb(240 240 240);
+}
+span{
+	vertical-align:top;
+	margin-right:23px;
+}
+.subform input[type="radio"]{
+	margin-left:95px;
+	margin-bottom:12px;
+}
+
+.subform input[type="text"], .subform textarea, .subform input[type="email"], .subform select[name="goal"]{
+	border-radius:1px;
+	border:solid 1px #999;
+	background:white;
+	color: #777;
+	font-size:0.8em;
+	padding: 3px;
+	width: 350px;
+	/*font-style: unset;*/
+	font-family: 'Raleway', sans-serif;
+}
+.subform input[type="text"]:focus, .subform textarea:focus, .subform input[type="email"]:focus, .subform select[name="goal"]:focus{
+	transition-property:color, background;
+	transition-duration:500ms;
+	background:white;
+	color:#333;
+}
+.subform input[type="text"], .subform textarea, .subform input[type="email"],{
+	transition-property:color, background;
+	transition-duration:500ms;
+	background:white;
+	color:red;
+}
+
+
+footer{
+	background:#000;
+}
+footer p{
+	font-family: 'Raleway', sans-serif;
+	padding:50px 0px 30px 50px;
+	color:#555;
+	margin-top:100px;
+}
